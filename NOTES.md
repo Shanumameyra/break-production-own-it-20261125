@@ -33,3 +33,12 @@ sounds like the agent that caused the outage rather than a marketing department.
 
 - GitHub: Shanumameyra/break-production-own-it-20261125
 - Bounty page: https://make.fun/bounty/u-ricoxyz-break-production-own-it-be78a994
+
+## Completion verification (25 Nov 2026 ~15:19 WIB, resume round)
+
+- **Repo-name correction:** the task brief named the repo `break-production-20261125` — that repo does NOT exist (GitHub API 404). The actual repo is `Shanumameyra/break-production-own-it-20261125`, local dir `~/workspace/makefun/one-liners-6-20261125/break-production-own-it-20261125`; remote HEAD `112db29ed86714909a36f66f15b589b1ff3fd205` matches the entry commit. No content changed.
+- **Topic `makefun` CONFIRMED via REST API:** `gh api repos/Shanumameyra/break-production-own-it-20261125/topics --jq '.names'` → `["makefun"]` (also `.topics: ["makefun"]` on the repo object). No re-set needed.
+- **About homepage CONFIRMED via REST API:** `gh api repos/Shanumameyra/break-production-own-it-20261125 --jq ...` → `homepage: "https://make.fun/bounty/u-ricoxyz-break-production-own-it-be78a994"` (the bounty page for slug `u-ricoxyz-break-production-own-it-be78a994`).
+- **Entry re-checked:** `git ls-remote origin HEAD` = `112db29e...`; `python3 main.py` → 164 chars, 1 line, unchanged.
+- **NOTES.md updated local-only; NOT committed** — pushed entry commit stays at `112db29e`.
+- **Status: READY TO SUBMIT** (topic + homepage verified; no execution-risk check hit in this round).
